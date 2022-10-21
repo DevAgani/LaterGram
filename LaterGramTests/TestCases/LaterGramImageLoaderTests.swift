@@ -29,7 +29,7 @@ final class LaterGramImageLoaderTests: XCTestCase {
     func test_init_doesNotRequestData(){
         let (_, client) = makeSUT(url: url())
         
-        XCTAssertNil(client.requestedURL)
+        XCTAssertTrue(client.requestedURLs.isEmpty)
     }
     
     func test_load_requestsDataFromAGivenURL() {
@@ -38,7 +38,18 @@ final class LaterGramImageLoaderTests: XCTestCase {
         let (sut, client) = makeSUT(url: givenURL)
         
         sut.load()
-        XCTAssertEqual(client.requestedURL, givenURL)
+        XCTAssertEqual(client.requestedURLs, [givenURL])
+    }
+    
+    func test_loadTwice_requestsDataFromURLTwice() {
+        let url = url()
+        let (sut, client) = makeSUT(url: url)
+        
+        sut.load()
+        sut.load()
+        
+        XCTAssertEqual(client.requestedURLs, [url, url])
+        
     }
   
     // MARK: - Helpers
@@ -52,10 +63,10 @@ final class LaterGramImageLoaderTests: XCTestCase {
     
     private class HTTPClientSpy: HTTPClient {
         
-        var requestedURL: URL?
+        var requestedURLs = [URL]()
        
         func get(from url: URL) {
-            self.requestedURL = url
+            requestedURLs.append(url)
         }
     }
     
