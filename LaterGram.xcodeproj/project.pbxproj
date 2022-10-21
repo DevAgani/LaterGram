@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DF46C1B2901D6BC00716D4C /* LaterGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1A2901D6BC00716D4C /* LaterGramTests.swift */; };
+		1DF46C1B2901D6BC00716D4C /* LaterGramImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */; };
 		1DF46C1E29025E4F00716D4C /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DF46C1A2901D6BC00716D4C /* LaterGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramTests.swift; sourceTree = "<group>"; };
+		1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramImageLoaderTests.swift; sourceTree = "<group>"; };
 		1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		F63900F0262965A1002D43D2 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
-				1DF46C1A2901D6BC00716D4C /* LaterGramTests.swift */,
+				1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF46C1B2901D6BC00716D4C /* LaterGramTests.swift in Sources */,
+				1DF46C1B2901D6BC00716D4C /* LaterGramImageLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
