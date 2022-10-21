@@ -27,6 +27,8 @@
 		1DF46C452902C32500716D4C /* LaterGramTokenServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */; };
 		1DF46C482902C5AF00716D4C /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DF46C472902C5AF00716D4C /* config.json */; };
 		1DF46C4A2902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */; };
+		1DF46C4C2902C87100716D4C /* LaterGramEndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C4B2902C87100716D4C /* LaterGramEndpointsTests.swift */; };
+		1DF46C502902D4F300716D4C /* LaterGramEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C4F2902D4F300716D4C /* LaterGramEndpoints.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
 		F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991CA26286DB80099E3E3 /* RootViewController.swift */; };
@@ -65,6 +67,8 @@
 		1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramTokenServiceTests.swift; sourceTree = "<group>"; };
 		1DF46C472902C5AF00716D4C /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecorater.swift; sourceTree = "<group>"; };
+		1DF46C4B2902C87100716D4C /* LaterGramEndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramEndpointsTests.swift; sourceTree = "<group>"; };
+		1DF46C4F2902D4F300716D4C /* LaterGramEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramEndpoints.swift; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65991C326286DB80099E3E3 /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 				1DF46C352902A56F00716D4C /* Clients */,
 				1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */,
 				1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */,
+				1DF46C4B2902C87100716D4C /* LaterGramEndpointsTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				1DF46C2529028CF500716D4C /* HTTPClient.swift */,
 				1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */,
 				1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */,
+				1DF46C4F2902D4F300716D4C /* LaterGramEndpoints.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				1DF46C31290295B000716D4C /* SharedHelpers.swift in Sources */,
 				1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */,
 				1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */,
+				1DF46C4C2902C87100716D4C /* LaterGramEndpointsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +402,7 @@
 				F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */,
 				1DF46C1E29025E4F00716D4C /* UIViewController+Preview.swift in Sources */,
 				1DF46C2229028CD000716D4C /* LaterGramImageLoader.swift in Sources */,
+				1DF46C502902D4F300716D4C /* LaterGramEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
