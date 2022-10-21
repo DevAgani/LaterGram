@@ -11,14 +11,14 @@ import LaterGram
 class HTTPClientSpy: HTTPClient {
     
     private var messages = [
-        (url: URL, completion: (HTTPClientResult) -> Void)
+        (url: URL, completion: (HTTPClient.Result) -> Void)
     ]()
     
     var requestedURLs: [URL] {
         return messages.map { $0.url }
     }
     
-    func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+    func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
         messages.append((url, completion))
     }
     
@@ -28,7 +28,11 @@ class HTTPClientSpy: HTTPClient {
     
     func completes(withStatusCode code: Int, data: Data, at index: Int = 0) {
         let response = HTTPURLResponse(url: messages[index].url, statusCode: code, httpVersion: nil, headerFields: nil)!
-        messages[index].completion(.success(data, response))
+        messages[index].completion(.success((data, response)))
+    }
+    
+    func complete(with values: (Data, HTTPURLResponse), at index: Int = 0 ) {
+        messages[index].completion(.success(values))
     }
     
 }

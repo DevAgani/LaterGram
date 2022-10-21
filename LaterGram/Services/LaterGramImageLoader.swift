@@ -7,11 +7,6 @@
 
 import Foundation
 
-public enum LoadImageResult {
-    case success([ImageItem])
-    case failure(Error)
-}
-
 public class LaterGramImageLoader {
     let url: URL
     let client: HTTPClient
@@ -21,7 +16,7 @@ public class LaterGramImageLoader {
         case invalidData
     }
     
-    public typealias Result = LoadImageResult
+    public typealias Result = Swift.Result<[ImageItem],Error>
     
     public init(url: URL, client: HTTPClient) {
         self.url = url
@@ -32,7 +27,7 @@ public class LaterGramImageLoader {
         client.get(from: url) { [weak self] result in
             guard self != nil else { return }
             switch result {
-            case let .success(data, response):
+            case let .success((data, response)):
                 completion(GramItemsMapper.map(data, from: response))
             case .failure:
                 completion(.failure(Error.connectivity))

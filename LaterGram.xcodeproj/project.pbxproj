@@ -20,6 +20,13 @@
 		1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */; };
 		1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */; };
 		1DF46C3B2902B05C00716D4C /* URL+Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C3A2902B05C00716D4C /* URL+Sign.swift */; };
+		1DF46C3D2902BC0000716D4C /* sampleConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DF46C3C2902BC0000716D4C /* sampleConfig.json */; };
+		1DF46C3F2902BC3B00716D4C /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DF46C3E2902BC3B00716D4C /* config.json */; };
+		1DF46C412902C0CB00716D4C /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C402902C0CB00716D4C /* TokenService.swift */; };
+		1DF46C432902C0E200716D4C /* LaterGramTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C422902C0E200716D4C /* LaterGramTokenService.swift */; };
+		1DF46C452902C32500716D4C /* LaterGramTokenServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */; };
+		1DF46C482902C5AF00716D4C /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DF46C472902C5AF00716D4C /* config.json */; };
+		1DF46C4A2902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
 		F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991CA26286DB80099E3E3 /* RootViewController.swift */; };
@@ -51,6 +58,13 @@
 		1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecoraterTests.swift; sourceTree = "<group>"; };
 		1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		1DF46C3A2902B05C00716D4C /* URL+Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Sign.swift"; sourceTree = "<group>"; };
+		1DF46C3C2902BC0000716D4C /* sampleConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleConfig.json; sourceTree = "<group>"; };
+		1DF46C3E2902BC3B00716D4C /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		1DF46C402902C0CB00716D4C /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		1DF46C422902C0E200716D4C /* LaterGramTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramTokenService.swift; sourceTree = "<group>"; };
+		1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramTokenServiceTests.swift; sourceTree = "<group>"; };
+		1DF46C472902C5AF00716D4C /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecorater.swift; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65991C326286DB80099E3E3 /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +110,8 @@
 				1DF46C2729028D0B00716D4C /* Models */,
 				1DF46C2129028CD000716D4C /* LaterGramImageLoader.swift */,
 				1DF46C2329028CE200716D4C /* GramItemsMapper.swift */,
+				1DF46C402902C0CB00716D4C /* TokenService.swift */,
+				1DF46C422902C0E200716D4C /* LaterGramTokenService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -114,6 +130,7 @@
 			children = (
 				1DF46C352902A56F00716D4C /* Clients */,
 				1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */,
+				1DF46C442902C32500716D4C /* LaterGramTokenServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -132,6 +149,7 @@
 			children = (
 				1DF46C2529028CF500716D4C /* HTTPClient.swift */,
 				1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */,
+				1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -143,6 +161,14 @@
 				1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		1DF46C462902C36F00716D4C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1DF46C472902C5AF00716D4C /* config.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		F63900CE26293D50002D43D2 /* LaterGramTests */ = {
@@ -165,6 +191,7 @@
 		F63900F0262965A1002D43D2 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
+				1DF46C462902C36F00716D4C /* Assets */,
 				1DF46C2F2902959D00716D4C /* Helpers */,
 				1DF46C2C29028FC800716D4C /* Services */,
 			);
@@ -232,6 +259,8 @@
 			children = (
 				F65991D426286DBA0099E3E3 /* Info.plist */,
 				F65991CF26286DBA0099E3E3 /* Assets.xcassets */,
+				1DF46C3C2902BC0000716D4C /* sampleConfig.json */,
+				1DF46C3E2902BC3B00716D4C /* config.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -317,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF46C482902C5AF00716D4C /* config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +355,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65991D326286DBA0099E3E3 /* LaunchScreen.storyboard in Resources */,
+				1DF46C3F2902BC3B00716D4C /* config.json in Resources */,
 				F65991D026286DBA0099E3E3 /* Assets.xcassets in Resources */,
+				1DF46C3D2902BC0000716D4C /* sampleConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +370,7 @@
 			files = (
 				1DF46C1B2901D6BC00716D4C /* LaterGramImageLoaderTests.swift in Sources */,
 				1DF46C2E29028FF700716D4C /* URLSessionHTTPClientTests.swift in Sources */,
+				1DF46C452902C32500716D4C /* LaterGramTokenServiceTests.swift in Sources */,
 				1DF46C31290295B000716D4C /* SharedHelpers.swift in Sources */,
 				1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */,
 				1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */,
@@ -351,6 +384,9 @@
 				1DF46C2B29028D3A00716D4C /* ImageItem.swift in Sources */,
 				1DF46C342902A4C500716D4C /* URLSessionHTTPClient.swift in Sources */,
 				F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */,
+				1DF46C432902C0E200716D4C /* LaterGramTokenService.swift in Sources */,
+				1DF46C4A2902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift in Sources */,
+				1DF46C412902C0CB00716D4C /* TokenService.swift in Sources */,
 				F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */,
 				1DF46C3B2902B05C00716D4C /* URL+Sign.swift in Sources */,
 				1DF46C2429028CE200716D4C /* GramItemsMapper.swift in Sources */,

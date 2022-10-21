@@ -10,3 +10,8 @@ import Foundation
 func url(_ string: String = "https://dummy-url.com") -> URL {
     URL(string: string)!
 }
+
+func anyNSError() -> NSError {
+    NSError(domain: "any error", code: 0)
+}
+
