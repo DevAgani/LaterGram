@@ -32,8 +32,8 @@ public class AuthenticatedHTTPClientDecorater: HTTPClient {
         
         guard pendingTokenRequests.count == 1 else { return }
         
-        tokenService.getToken {[weak self] tokeResult in
-            self?.pendingTokenRequests.forEach { $0(tokeResult) }
+        tokenService.getToken {[weak self] tokenResult in
+            self?.pendingTokenRequests.forEach { $0(tokenResult) }
             self?.pendingTokenRequests = []
         }
     }

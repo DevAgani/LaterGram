@@ -13,9 +13,7 @@ extension URL {
     /// - Parameter token: valid token
     /// - Returns: URL
     public func signed(with token: String) -> URL {
-        let url = self
-        url.addQueryItems(ofKey: "access_token", token)
-        return url
+        return self.addQueryItems(ofKey: "access_token", token)
     }
     
     /// Adds query items to a url
@@ -23,7 +21,6 @@ extension URL {
     ///   - key: key
     ///   - item: values
     /// - Returns: `URL`
-    @discardableResult
     public func addQueryItems(ofKey key: String, _ item: String) -> URL {
         var url = self
         let tokenQueryItem = URLQueryItem(name: key, value: item)
