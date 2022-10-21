@@ -17,6 +17,8 @@
 		1DF46C2E29028FF700716D4C /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C2D29028FF700716D4C /* URLSessionHTTPClientTests.swift */; };
 		1DF46C31290295B000716D4C /* SharedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C30290295B000716D4C /* SharedHelpers.swift */; };
 		1DF46C342902A4C500716D4C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */; };
+		1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */; };
+		1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
 		F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991CA26286DB80099E3E3 /* RootViewController.swift */; };
@@ -45,6 +47,8 @@
 		1DF46C2D29028FF700716D4C /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		1DF46C30290295B000716D4C /* SharedHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedHelpers.swift; sourceTree = "<group>"; };
 		1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecoraterTests.swift; sourceTree = "<group>"; };
+		1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65991C326286DB80099E3E3 /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +109,8 @@
 		1DF46C2C29028FC800716D4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1DF46C352902A56F00716D4C /* Clients */,
 				1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */,
-				1DF46C2D29028FF700716D4C /* URLSessionHTTPClientTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF46C30290295B000716D4C /* SharedHelpers.swift */,
+				1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +129,15 @@
 			children = (
 				1DF46C2529028CF500716D4C /* HTTPClient.swift */,
 				1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		1DF46C352902A56F00716D4C /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				1DF46C2D29028FF700716D4C /* URLSessionHTTPClientTests.swift */,
+				1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -322,6 +336,8 @@
 				1DF46C1B2901D6BC00716D4C /* LaterGramImageLoaderTests.swift in Sources */,
 				1DF46C2E29028FF700716D4C /* URLSessionHTTPClientTests.swift in Sources */,
 				1DF46C31290295B000716D4C /* SharedHelpers.swift in Sources */,
+				1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */,
+				1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
