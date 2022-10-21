@@ -19,6 +19,7 @@
 		1DF46C342902A4C500716D4C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */; };
 		1DF46C372902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */; };
 		1DF46C392902A6F000716D4C /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */; };
+		1DF46C3B2902B05C00716D4C /* URL+Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C3A2902B05C00716D4C /* URL+Sign.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
 		F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991CA26286DB80099E3E3 /* RootViewController.swift */; };
@@ -49,6 +50,7 @@
 		1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		1DF46C362902A58E00716D4C /* AuthenticatedHTTPClientDecoraterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecoraterTests.swift; sourceTree = "<group>"; };
 		1DF46C382902A6F000716D4C /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		1DF46C3A2902B05C00716D4C /* URL+Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Sign.swift"; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65991C326286DB80099E3E3 /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */,
+				1DF46C3A2902B05C00716D4C /* URL+Sign.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				1DF46C342902A4C500716D4C /* URLSessionHTTPClient.swift in Sources */,
 				F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */,
 				F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */,
+				1DF46C3B2902B05C00716D4C /* URL+Sign.swift in Sources */,
 				1DF46C2429028CE200716D4C /* GramItemsMapper.swift in Sources */,
 				1DF46C2629028CF500716D4C /* HTTPClient.swift in Sources */,
 				1DF46C2929028D1E00716D4C /* MediaType.swift in Sources */,
@@ -388,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAPRN32R23;
 				INFOPLIST_FILE = LaterGramTests/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAPRN32R23;
 				INFOPLIST_FILE = LaterGramTests/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -547,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAPRN32R23;
 				INFOPLIST_FILE = LaterGram/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAPRN32R23;
 				INFOPLIST_FILE = LaterGram/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
