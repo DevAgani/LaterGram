@@ -7,9 +7,20 @@
 
 import XCTest
 
+class LaterGramImageLoader {
+    
+}
+
+class HTTPClient {
+    var requestedURL: URL?
+}
+
 final class LaterGramImageLoaderTests: XCTestCase {
 
-    func testExample(){
-        XCTFail()
+    func test_init_doesNotRequestData(){
+        let client = HTTPClient()
+        _ = LaterGramImageLoader()
+        
+        XCTAssertNil(client.requestedURL)
     }
 }
