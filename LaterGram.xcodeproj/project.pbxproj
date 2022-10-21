@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DF46C1B2901D6BC00716D4C /* LaterGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1A2901D6BC00716D4C /* LaterGramTests.swift */; };
+		1DF46C1E29025E4F00716D4C /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */; };
 		F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C626286DB80099E3E3 /* AppDelegate.swift */; };
 		F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991C826286DB80099E3E3 /* SceneDelegate.swift */; };
 		F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65991CA26286DB80099E3E3 /* RootViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1DF46C1A2901D6BC00716D4C /* LaterGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramTests.swift; sourceTree = "<group>"; };
+		1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
 		F63900CD26293D50002D43D2 /* LaterGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaterGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63900D126293D50002D43D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65991C326286DB80099E3E3 /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DF46C1C29025E2A00716D4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F63900CE26293D50002D43D2 /* LaterGramTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		F65991C526286DB80099E3E3 /* LaterGram */ = {
 			isa = PBXGroup;
 			children = (
+				1DF46C1C29025E2A00716D4C /* Extensions */,
 				F65991DE26286E660099E3E3 /* Delegates */,
 				F65991E526286EDD0099E3E3 /* Resources */,
 				F65991E226286E840099E3E3 /* ViewControllers */,
@@ -255,6 +266,7 @@
 				F65991CB26286DB80099E3E3 /* RootViewController.swift in Sources */,
 				F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */,
 				F65991C926286DB80099E3E3 /* SceneDelegate.swift in Sources */,
+				1DF46C1E29025E4F00716D4C /* UIViewController+Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

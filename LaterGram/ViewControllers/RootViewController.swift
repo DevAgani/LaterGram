@@ -27,3 +27,11 @@ final class RootViewController: UIViewController {
     }
 }
 
+#if DEBUG
+import SwiftUI
+struct RootViewControllerPreview: PreviewProvider {
+    static var previews: some View {
+       return UINavigationController(rootViewController: RootViewController()).toPreView()
+    }
+}
+#endif
