@@ -27,22 +27,29 @@ protocol HTTPClient {
 final class LaterGramImageLoaderTests: XCTestCase {
 
     func test_init_doesNotRequestData(){
-        let client = HTTPClientSpy()
-        _ = LaterGramImageLoader(url: url(), client: client)
+        let (_, client) = makeSUT(url: url())
         
         XCTAssertNil(client.requestedURL)
     }
     
     func test_load_requestsDataFromAGivenURL() {
         let givenURL = url("https://very-secure-url.com")
-        let client = HTTPClientSpy()
-        let sut = LaterGramImageLoader(url: givenURL, client: client)
+        
+        let (sut, client) = makeSUT(url: givenURL)
         
         sut.load()
         XCTAssertEqual(client.requestedURL, givenURL)
     }
   
     // MARK: - Helpers
+    
+    private func makeSUT(url: URL) -> (sut: LaterGramImageLoader, client: HTTPClientSpy) {
+        let client = HTTPClientSpy()
+        let sut = LaterGramImageLoader(url: url, client: client)
+        
+        return (sut, client)
+    }
+    
     private class HTTPClientSpy: HTTPClient {
         
         var requestedURL: URL?
