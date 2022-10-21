@@ -156,11 +156,7 @@ final class LaterGramImageLoaderTests: XCTestCase {
         }
         
     }
-    
-    private func url(_ string: String = "https://dummy-url.com") -> URL {
-        URL(string: string)!
-    }
-    
+
     private func failure(_ error: LaterGramImageLoader.Error) -> LaterGramImageLoader.Result {
         .failure(error)
     }
