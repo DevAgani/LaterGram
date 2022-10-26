@@ -15,12 +15,21 @@ Rename `sampleConfig.json` to `config.json` and update the access_token with a v
 - use the key combination `ctrl + R` to run the application
 
 ## Screenshots
-![Dark Mode](Assets/iPhone%2014%20Pro-dark.png)
-![Light Mode](Assets/iPhone%2014%20Pro-light.png)
+### Normal states
+<img src="Assets/iPhone%2014%20Pro-light.png" width="150">
+<img src="Assets/iPhone%2014%20Pro-dark.png" width="150">
+<br/><br/>
+
+### Error states
+<img src="Assets/iPhone%2014%20Pro-error-light.png" width="150">
+<img src="Assets/iPhone%2014%20Pro-error-dark.png" width="150">
 
 ## Tests
 - Open `LaterGram.xcodeproj`
 - use the key combination `ctrl + U` to run the unit tests
+
+### Coverage
+<img src="Assets/TestCoverage.png" width="100%">
 
 ## Improvements
 - Caching layer to eliminate fetching images every time
