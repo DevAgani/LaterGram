@@ -2,3 +2,7 @@ xcuserdata
 xcshareddata
 *.xcworkspacedata
 .DS_Store
+
+#Configuration files
+
+LaterGram/Resources/config.json
