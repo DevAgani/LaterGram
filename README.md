@@ -14,6 +14,10 @@ Rename `sampleConfig.json` to `config.json` and update the access_token with a v
 - Open `LaterGram.xcodeproj`
 - use the key combination `ctrl + R` to run the application
 
+## Screenshots
+![Dark Mode](Assets/iPhone%2014%20Pro-dark.png)
+![Light Mode](Assets/iPhone%2014%20Pro-light.png)
+
 ## Tests
 - Open `LaterGram.xcodeproj`
 - use the key combination `ctrl + U` to run the unit tests
@@ -22,6 +26,7 @@ Rename `sampleConfig.json` to `config.json` and update the access_token with a v
 - Caching layer to eliminate fetching images every time
 
 ## ChangeLog
+ - [CHORE: Documentation + CleanUp](https://github.com/DevAgani/LaterGram/pull/3)
  - [Feature: Presentation Layer](https://github.com/DevAgani/LaterGram/pull/2)
  - [Feature: Image Feed Loader](https://github.com/DevAgani/LaterGram/pull/1)
 
@@ -32,3 +37,4 @@ Rename `sampleConfig.json` to `config.json` and update the access_token with a v
 curl --request GET \
   --url 'https://graph.instagram.com/v15.0/me?access_token={access_token}'
 ```
+- I decided to mock the response just to showcase the how everying was to eventually fally into place.
