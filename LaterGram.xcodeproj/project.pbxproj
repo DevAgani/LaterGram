@@ -23,7 +23,6 @@
 		1D82ADF02907240900D22D37 /* AlwaysFailingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADEF2907240900D22D37 /* AlwaysFailingLoader.swift */; };
 		1D82ADF2290727A500D22D37 /* E2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADF1290727A500D22D37 /* E2ETests.swift */; };
 		1D82ADF429079D1F00D22D37 /* LaterGramImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADF329079D1F00D22D37 /* LaterGramImageLoader.swift */; };
-		1D82ADF92907A18400D22D37 /* URLSessionHTTPImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADF82907A18400D22D37 /* URLSessionHTTPImageClient.swift */; };
 		1DF46C1B2901D6BC00716D4C /* LaterGramImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */; };
 		1DF46C1E29025E4F00716D4C /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */; };
 		1DF46C2229028CD000716D4C /* LaterGramLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF46C2129028CD000716D4C /* LaterGramLoader.swift */; };
@@ -79,7 +78,6 @@
 		1D82ADEF2907240900D22D37 /* AlwaysFailingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysFailingLoader.swift; sourceTree = "<group>"; };
 		1D82ADF1290727A500D22D37 /* E2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E2ETests.swift; sourceTree = "<group>"; };
 		1D82ADF329079D1F00D22D37 /* LaterGramImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramImageLoader.swift; sourceTree = "<group>"; };
-		1D82ADF82907A18400D22D37 /* URLSessionHTTPImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPImageClient.swift; sourceTree = "<group>"; };
 		1DF46C1A2901D6BC00716D4C /* LaterGramImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramImageLoaderTests.swift; sourceTree = "<group>"; };
 		1DF46C1D29025E4F00716D4C /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
 		1DF46C2129028CD000716D4C /* LaterGramLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramLoader.swift; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 				1DF46C332902A4C500716D4C /* URLSessionHTTPClient.swift */,
 				1DF46C492902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift */,
 				1DF46C4F2902D4F300716D4C /* LaterGramEndpoints.swift */,
-				1D82ADF82907A18400D22D37 /* URLSessionHTTPImageClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -489,7 +486,6 @@
 				1D82ADD629071DD400D22D37 /* UIImageView+Animations.swift in Sources */,
 				1DF46C432902C0E200716D4C /* LaterGramTokenService.swift in Sources */,
 				1DF46C4A2902C72A00716D4C /* AuthenticatedHTTPClientDecorater.swift in Sources */,
-				1D82ADF92907A18400D22D37 /* URLSessionHTTPImageClient.swift in Sources */,
 				1DF46C412902C0CB00716D4C /* TokenService.swift in Sources */,
 				1D82ADEE290722DC00D22D37 /* LaterGramUIComposer.swift in Sources */,
 				F65991C726286DB80099E3E3 /* AppDelegate.swift in Sources */,
