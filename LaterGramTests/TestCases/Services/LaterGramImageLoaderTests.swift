@@ -1,5 +1,5 @@
 //
-//  LaterGramImageLoaderTests.swift
+//  LaterGramLoaderTests.swift
 //  LaterGramTests
 //
 //  Created by George Nyakundi on 20/10/2022.
@@ -8,7 +8,7 @@
 import XCTest
 import LaterGram
 
-final class LaterGramImageLoaderTests: XCTestCase {
+final class LaterGramLoaderTests: XCTestCase {
     
     func test_init_doesNotRequestData(){
         let (_, client) = makeSUT(url: url())
@@ -91,9 +91,9 @@ final class LaterGramImageLoaderTests: XCTestCase {
     
     func test_load_doesNotDeliverResultsAfterSUTInstanceHasBeenDeallocated() {
         let client = HTTPClientSpy()
-        var sut: LaterGramImageLoader? = LaterGramImageLoader(url: url(), client: client)
+        var sut: LaterGramLoader? = RemoteLaterGramLoader(url: url(), client: client)
         
-        var capturedResults = [LaterGramImageLoader.Result]()
+        var capturedResults = [LaterGramLoader.Result]()
         sut?.load { capturedResults.append($0)}
         
         sut = nil
@@ -103,15 +103,15 @@ final class LaterGramImageLoaderTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT(url: URL) -> (sut: LaterGramImageLoader, client: HTTPClientSpy) {
+    private func makeSUT(url: URL) -> (sut: RemoteLaterGramLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
-        let sut = LaterGramImageLoader(url: url, client: client)
+        let sut = RemoteLaterGramLoader(url: url, client: client)
         
         return (sut, client)
     }
     
     
-    private func expect(_ sut: LaterGramImageLoader, toCompleteWith expectedResult: LaterGramImageLoader.Result,
+    private func expect(_ sut: RemoteLaterGramLoader, toCompleteWith expectedResult: RemoteLaterGramLoader.Result,
                         when action: () -> Void, file: StaticString = #filePath,
                         line: UInt = #line) {
         let exp = expectation(description: "wait for load completion")
@@ -119,7 +119,7 @@ final class LaterGramImageLoaderTests: XCTestCase {
             switch(receivedResult, expectedResult) {
             case let (.success(receivedItems), .success(expectedItems)):
                 XCTAssertEqual(receivedItems, expectedItems, file: file, line: line)
-            case let (.failure(receivedError as LaterGramImageLoader.Error), .failure(expectedError as LaterGramImageLoader.Error)):
+            case let (.failure(receivedError as RemoteLaterGramLoader.Error), .failure(expectedError as RemoteLaterGramLoader.Error)):
                 XCTAssertEqual(receivedError, expectedError, file: file, line: line)
             default:
                 XCTFail("Expected result \(expectedResult), received \(receivedResult) instead", file: file, line: line)
@@ -132,7 +132,7 @@ final class LaterGramImageLoaderTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
 
-    private func failure(_ error: LaterGramImageLoader.Error) -> LaterGramImageLoader.Result {
+    private func failure(_ error: RemoteLaterGramLoader.Error) -> LaterGramLoader.Result {
         .failure(error)
     }
     

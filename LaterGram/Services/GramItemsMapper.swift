@@ -40,13 +40,13 @@ final class GramItemsMapper {
         return 200
     }
     
-    static func map(_ data: Data, from response: HTTPURLResponse) -> LaterGramImageLoader.Result {
+    static func map(_ data: Data, from response: HTTPURLResponse) -> LaterGramLoader.Result {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         
         guard response.statusCode == OK_200,
                 let root = try? decoder.decode(Root.self, from: data) else {
-            return .failure(LaterGramImageLoader.Error.invalidData)
+            return .failure(RemoteLaterGramLoader.Error.invalidData)
         }
         
         return .success(root.items)
