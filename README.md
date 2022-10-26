@@ -1,16 +1,25 @@
 ## LaterGram
+Is a mobile app with one view showing the list of the most recent photos and albums posted on Instagram with the following guidelines:
 
 ## Setup
+- Clone the Repo
+- The project has been build with Xcode Version 14.0.1
+
 Rename `sampleConfig.json` to `config.json` and update the access_token with a valid token
 
 ## Architecture
+- MVVM (Model View ViewModel) + Composition layer
 
 ## How to run the application
+- Open `LaterGram.xcodeproj`
+- use the key combination `ctrl + R` to run the application
 
 ## Tests
+- Open `LaterGram.xcodeproj`
+- use the key combination `ctrl + U` to run the unit tests
 
 ## Improvements
-
+- Caching layer to eliminate fetching images every time
 
 ## ChangeLog
  - [Feature: Presentation Layer](https://github.com/DevAgani/LaterGram/pull/2)
