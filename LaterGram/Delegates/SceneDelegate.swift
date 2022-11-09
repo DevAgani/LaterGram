@@ -27,6 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tokenService = LaterGramTokenService()
         let authenticatedClient = AuthenticatedHTTPClientDecorater(decoratee: client, tokenService: tokenService)
         
+        // TODO: Fetch this from the Network
         let userID = 3979023678879161
         
         let url = LaterGramEndpoint.media(userID).url(baseURL: baseURL)
