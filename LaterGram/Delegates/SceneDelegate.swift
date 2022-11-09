@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func makeRootViewController() -> UIViewController {
         let baseURL = URL(string: "https://graph.instagram.com/v15.0")!
         let client = URLSessionHTTPClient()
+        let lgClient = LGURLSessionHTTPClient()
         let tokenService = LaterGramTokenService()
         let authenticatedClient = AuthenticatedHTTPClientDecorater(decoratee: client, tokenService: tokenService)
         
@@ -32,7 +33,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let laterGramLoader = RemoteLaterGramLoader(url: url, client: authenticatedClient)
         
-        let view = UINavigationController(rootViewController: LaterGramUIComposer.composedWith(loader: laterGramLoader, imageLoader: AlwaysFailingLoader(delay: 1.3)))
+        let imageLoader = RemoteLaterGramImageDataLoader(client: lgClient)
+        
+        let view = UINavigationController(rootViewController: LaterGramUIComposer.composedWith(loader: laterGramLoader, imageLoader: imageLoader))
         return view
     }
 }
