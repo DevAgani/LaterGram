@@ -16,8 +16,8 @@ Is a mobile app with one view showing the list of the most recent photos and alb
 
 ## Screenshots
 ### Normal states
-<img src="Assets/iPhone%2014%20Pro-light.png" width="150">
-<img src="Assets/iPhone%2014%20Pro-dark.png" width="150">
+<img src="Assets/latergram-light.png" width="150">
+<img src="Assets/latergram-dark.png" width="150">
 <br/><br/>
 
 ### Error states
