@@ -41,11 +41,4 @@ Is a mobile app with one view showing the list of the most recent photos and alb
  - [Feature: Presentation Layer](https://github.com/DevAgani/LaterGram/pull/2)
  - [Feature: Image Feed Loader](https://github.com/DevAgani/LaterGram/pull/1)
 
-## Challenges
-- I experienced issues with the `access_token` that were provided whenever i'd make requests to the Basic Instagram Graph API as below 
-
-```bash
-curl --request GET \
-  --url 'https://graph.instagram.com/v15.0/me?access_token={access_token}'
-```
-- I decided to mock the response just to showcase the how everying was to eventually fally into place.
+Built with `XCode Version 14.1` 
