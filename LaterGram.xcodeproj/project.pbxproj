@@ -20,7 +20,6 @@
 		1D82ADE629071F2E00D22D37 /* LaterGramImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADE529071F2E00D22D37 /* LaterGramImageViewModel.swift */; };
 		1D82ADEB2907223C00D22D37 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADEA2907223C00D22D37 /* MainQueueDispatchDecorator.swift */; };
 		1D82ADEE290722DC00D22D37 /* LaterGramUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADED290722DC00D22D37 /* LaterGramUIComposer.swift */; };
-		1D82ADF02907240900D22D37 /* AlwaysFailingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADEF2907240900D22D37 /* AlwaysFailingLoader.swift */; };
 		1D82ADF2290727A500D22D37 /* E2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADF1290727A500D22D37 /* E2ETests.swift */; };
 		1D82ADF429079D1F00D22D37 /* LaterGramImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D82ADF329079D1F00D22D37 /* LaterGramImageLoader.swift */; };
 		1DEF6986291C480300680240 /* LGHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF6985291C480300680240 /* LGHTTPClient.swift */; };
@@ -79,7 +78,6 @@
 		1D82ADE529071F2E00D22D37 /* LaterGramImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramImageViewModel.swift; sourceTree = "<group>"; };
 		1D82ADEA2907223C00D22D37 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		1D82ADED290722DC00D22D37 /* LaterGramUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramUIComposer.swift; sourceTree = "<group>"; };
-		1D82ADEF2907240900D22D37 /* AlwaysFailingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysFailingLoader.swift; sourceTree = "<group>"; };
 		1D82ADF1290727A500D22D37 /* E2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E2ETests.swift; sourceTree = "<group>"; };
 		1D82ADF329079D1F00D22D37 /* LaterGramImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterGramImageLoader.swift; sourceTree = "<group>"; };
 		1DEF6985291C480300680240 /* LGHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGHTTPClient.swift; sourceTree = "<group>"; };
@@ -360,7 +358,6 @@
 			children = (
 				F65991C626286DB80099E3E3 /* AppDelegate.swift */,
 				F65991C826286DB80099E3E3 /* SceneDelegate.swift */,
-				1D82ADEF2907240900D22D37 /* AlwaysFailingLoader.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -502,7 +499,6 @@
 				1D82ADD829071DFF00D22D37 /* UITableView+Dequeueing.swift in Sources */,
 				1DF46C2B29028D3A00716D4C /* ImageItem.swift in Sources */,
 				1DEF6986291C480300680240 /* LGHTTPClient.swift in Sources */,
-				1D82ADF02907240900D22D37 /* AlwaysFailingLoader.swift in Sources */,
 				1DF46C342902A4C500716D4C /* URLSessionHTTPClient.swift in Sources */,
 				1D82ADDC29071E3100D22D37 /* UIView+Shimmering.swift in Sources */,
 				1D82ADD329071D9F00D22D37 /* LaterGramImageCell.swift in Sources */,
