@@ -35,7 +35,7 @@ public enum LaterGramEndpoint {
                 "timestamp"
             ].joined(separator: ",")
             
-            return baseURL.appending(path: "/\(userID)").addQueryItems(ofKey: "fields", mediaFields)
+            return baseURL.appending(path: "/\(userID)/media").addQueryItems(ofKey: "fields", mediaFields)
         case let .mediaChildren(mediaID):
             return baseURL.appending(path: "/\(mediaID)/children")
         }

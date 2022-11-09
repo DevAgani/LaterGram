@@ -21,12 +21,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func makeRootViewController() -> UIViewController {
+        let baseURL = URL(string: "https://graph.instagram.com/v15.0")!
         let client = URLSessionHTTPClient()
+        let lgClient = LGURLSessionHTTPClient()
+        let tokenService = LaterGramTokenService()
+        let authenticatedClient = AuthenticatedHTTPClientDecorater(decoratee: client, tokenService: tokenService)
         
-        let url = URL(string: "https://gist.githubusercontent.com/DevAgani/040ce4e21c702eb46f2ef887b84eaf16/raw/3a2d615649d071de33e9d708b5fdd5b4bc683b24/testData.json")!
+        // TODO: Fetch this from the Network
+        let userID = 3979023678879161
         
-        let laterGramLoader = RemoteLaterGramLoader(url: url, client: client)
-        let view = UINavigationController(rootViewController: LaterGramUIComposer.composedWith(loader: laterGramLoader, imageLoader: AlwaysFailingLoader(delay: 1.3)))
+        let url = LaterGramEndpoint.media(userID).url(baseURL: baseURL)
+        
+        let laterGramLoader = RemoteLaterGramLoader(url: url, client: authenticatedClient)
+        
+        let imageLoader = RemoteLaterGramImageDataLoader(client: lgClient)
+        
+        let view = UINavigationController(rootViewController: LaterGramUIComposer.composedWith(loader: laterGramLoader, imageLoader: imageLoader))
         return view
     }
 }
