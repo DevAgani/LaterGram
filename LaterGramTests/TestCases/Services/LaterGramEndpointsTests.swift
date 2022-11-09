@@ -24,7 +24,7 @@ final class LaterGramEndpointsTests: XCTestCase {
     
     func test_media_endpointURL() {
         let userID = 20092
-        let mediaURL = URL(string: "\(anyBaseURLString())/\(userID)?fields=id,media_type,media_url,username,timestamp")!
+        let mediaURL = URL(string: "\(anyBaseURLString())/\(userID)/media?fields=id,media_type,media_url,username,timestamp")!
         
         expect(mediaURL, whenEndpointIs: .media(userID), withBaseURL: anyBaseURL())
     }

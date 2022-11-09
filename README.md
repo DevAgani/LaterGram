@@ -33,6 +33,7 @@ Rename `sampleConfig.json` to `config.json` and update the access_token with a v
 
 ## Improvements
 - Caching layer to eliminate fetching images every time
+- Use a UICollectionView to allow for listing images and scrolling within an album
 
 ## ChangeLog
  - [CHORE: Documentation + CleanUp](https://github.com/DevAgani/LaterGram/pull/3)
